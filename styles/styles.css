@@ -5,9 +5,13 @@ body {
   line-height: 1.5em;
   padding: 30px;
   display: grid;
-  grid-template-columns: 400px;
-  gap: 30px;
+  grid-template-columns: 350px auto;
+}
+
+.filter {
+  display: grid;
   grid-template-rows: repeat(3, min-content);
+  gap: 30px;
 }
 
 .title {
@@ -109,13 +113,50 @@ input.some-children-selected + .fake-checkbox {
   font-weight: 700;
   border: 1px solid transparent;
   line-height: 2.5em;
+  cursor: pointer;
 }
 
 .menu .buttons .cancel {
   background-color: #dedede;
   color: #222222;
 }
+
+.menu .buttons .cancel:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 .menu .buttons .apply {
   background-color: #18b776;
   color: white;
+}
+
+.menu .buttons .apply:hover {
+  box-shadow: 0 0 10px #18b776;
+}
+
+.content {
+  justify-self: center;
+  background-color: rgba(0, 100, 100, 0.3);
+  width: 100%;
+  display: grid;
+  justify-content: center;
+}
+
+.content ul {
+  list-style-type: none;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 0;
+}
+
+.content ul li {
+  display: inline-block;
+  width: 400px;
+  background-color: #cc4042;
+  color: white;
+  font-weight: 700;
+  line-height: 2.5em;
+  font-size: 16px;
 }
