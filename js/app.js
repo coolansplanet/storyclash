@@ -62,10 +62,15 @@ searchBoxElement.addEventListener("input", e => {
 
 buttons.querySelector(".apply").addEventListener("click", () => {
   saveSelectionStateInHistory();
+  contentList
+    .querySelectorAll("*")
+    .forEach(oneListItem => oneListItem.remove());
   content.forEach(oneItem => {
-    const newListItem = document.createElement("li");
-    newListItem.append(document.createTextNode(oneItem.label));
-    contentList.appendChild(newListItem);
+    if (categoriesIndex[oneItem.id].selected) {
+      const newListItem = document.createElement("li");
+      newListItem.append(document.createTextNode(oneItem.label));
+      contentList.appendChild(newListItem);
+    }
   });
   showBottomButtons();
 });
