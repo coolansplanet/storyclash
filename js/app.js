@@ -7,7 +7,7 @@ const buttons = document.querySelector(".menu .buttons");
 const contentList = document.querySelector(".content ul");
 
 menuElement.append(createHtmlItems(categories));
-saveSelectionStateInHistory();
+apply();
 
 menuElement.addEventListener("click", e => {
   e.stopPropagation();
@@ -60,17 +60,4 @@ searchBoxElement.addEventListener("input", e => {
   }
 });
 
-buttons.querySelector(".apply").addEventListener("click", () => {
-  saveSelectionStateInHistory();
-  contentList
-    .querySelectorAll("*")
-    .forEach(oneListItem => oneListItem.remove());
-  content.forEach(oneItem => {
-    if (categoriesIndex[oneItem.id].selected) {
-      const newListItem = document.createElement("li");
-      newListItem.append(document.createTextNode(oneItem.label));
-      contentList.appendChild(newListItem);
-    }
-  });
-  showBottomButtons();
-});
+buttons.querySelector(".apply").addEventListener("click", apply);
