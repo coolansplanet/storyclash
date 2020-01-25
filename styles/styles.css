@@ -136,7 +136,7 @@ input.some-children-selected + .fake-checkbox {
 
 .content {
   justify-self: center;
-  background-color: rgba(0, 100, 100, 0.3);
+  background-color: rgba(0, 150, 200, 0.3);
   width: 100%;
   display: grid;
   justify-content: center;
@@ -149,14 +149,17 @@ input.some-children-selected + .fake-checkbox {
   grid-template-columns: 1fr;
   gap: 20px;
   padding: 0;
+  padding: 20px;
 }
 
 .content ul li {
   display: inline-block;
   width: 400px;
-  background-color: #cc4042;
+  background-color: #343f83;
   color: white;
   font-weight: 700;
   line-height: 2.5em;
   font-size: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
 }

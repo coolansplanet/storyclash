@@ -4,6 +4,7 @@ const categoriesSelectionHistory = [];
 const menuElement = document.querySelector(".menu .items");
 const searchBoxElement = document.querySelector(".menu .search-box");
 const buttons = document.querySelector(".menu .buttons");
+const contentList = document.querySelector(".content ul");
 
 menuElement.append(createHtmlItems(categories));
 saveSelectionStateInHistory();
@@ -59,7 +60,12 @@ searchBoxElement.addEventListener("input", e => {
   }
 });
 
-buttons.querySelector(".apply").addEventListener("click", e => {
+buttons.querySelector(".apply").addEventListener("click", () => {
   saveSelectionStateInHistory();
+  content.forEach(oneItem => {
+    const newListItem = document.createElement("li");
+    newListItem.append(document.createTextNode(oneItem.label));
+    contentList.appendChild(newListItem);
+  });
   showBottomButtons();
 });
