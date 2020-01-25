@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5em;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 400px;
+  gap: 30px;
+  grid-template-rows: repeat(3, min-content);
+}
+
+.title {
+  color: #18b776;
+  line-height: 1.5em;
+  font-size: 30px;
+}
+
+.subtitle {
+  color: #222222;
+  line-height: 1.5em;
+  font-size: 20px;
+}
+
+.menu {
+  display: inline-block;
+  user-select: none;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu ul li.no-match {
+  display: none;
+}
+
+.menu-item > ul {
+  display: none;
+  padding-left: 2em;
+}
+
+.menu-item.is-open > ul {
+  display: block;
+}
+
+.items-container > span::after {
+  padding-left: 1em;
+  position: relative;
+  bottom: 0.2em;
+  content: "►";
+  color: #999999;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.items-container.is-open > span::after {
+  content: "▼";
+  bottom: 0.1em;
+}
+
+.fake-checkbox {
+  display: inline-block;
+  width: 0.8em;
+  height: 0.8em;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  border-radius: 1px;
+  margin-right: 1ex;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+input:checked + .fake-checkbox {
+  background-color: #18b776;
+  border-color: #18b776;
+  padding: 0;
+  color: white;
+  line-height: 0.8em;
+  font-weight: bold;
+}
+
+input:checked + .fake-checkbox::before {
+  content: "✓";
+  display: inline;
+  position: relative;
+  right: 1px;
+}
+
+input.some-children-selected + .fake-checkbox {
+  background-color: rgba(0, 100, 100, 0.3);
+  border: none;
+}
+
+.menu .buttons {
+  display: grid;
+  grid-template-columns: 120px 120px;
+  gap: 30px;
+}
+
+.menu .buttons.hide {
+  display: none;
+}
+
+.menu .button {
+  width: 100%;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  line-height: 2.5em;
+}
+
+.menu .buttons .cancel {
+  background-color: #dedede;
+  color: #222222;
+}
+.menu .buttons .apply {
+  background-color: #18b776;
+  color: white;
+}
