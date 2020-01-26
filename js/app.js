@@ -66,6 +66,7 @@ buttons.querySelector(".cancel").addEventListener("click", () => {
     oneCategory.selected = oneCategory.checkbox.checked =
       lastSnapshot[oneCategory.id];
     updateParentCheckboxes(oneCategory);
+    halfCheckAllParents(oneCategory);
   });
   showBottomButtons();
 });
