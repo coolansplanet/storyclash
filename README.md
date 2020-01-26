@@ -6,11 +6,11 @@ I've used a "raw" and "old fasioned" way to create this project (no minify, no b
 
 In normal circunstances (bigger projects), I use the [BEM](http://getbem.com/naming/) naming convention on CSS classes, but in this case, as it's a small one, I've picked simple names instead.
 
-The `categories-config` (required by the assessment) is located in the `categories.js` file. I've chosen the named "categories" for more simplicity, but the concept is the same.
+The `categories-config` (required by the assessment) is located in the `categories.js` file. I've chosen the name "categories" for more simplicity, but the concept is the same.
 
-I decided to not upload this project in Github, in case you need to mantain the solved assessment hidden from other people who my be doing the test too.
+I decided to not upload this project on Github, in case you need to mantain the solved assessment hidden from other people who may be doing this test too.
 
-To run it, just install the `serve` package (globally) with node, and then go to the project's root folder and run `serve`
+To run it, just install the `serve` package (globally) with node, and then go to the project's root folder and run `serve`. This is going to run the server and will output an url on localhost. If the browser doesn't load automatically, please copy and past that url to it.
 
 ---
 
