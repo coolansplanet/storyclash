@@ -6,7 +6,7 @@ I've used a "raw" and "old fasioned" way to create this project (no minify, no b
 
 In normal circunstances (bigger projects), I use the [BEM](http://getbem.com/naming/) naming convention on classes, but in this case, as it's a small one, I've picked simple names instead.
 
-The `categories-config` (required by the assessment) is located in the `categories.js` file. I named it just "categories" for more simplicity.
+The `categories-config` (required by the assessment) is located in the `categories.js` file. I've chosen the named "categories" for more simplicity, but the concept is the same.
 
 ---
 
