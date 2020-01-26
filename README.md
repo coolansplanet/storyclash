@@ -2,7 +2,7 @@
 
 ## Test-Project for StoryClash
 
-I've used a "raw" and "old fasioned" way to create this project (no minify, no babel, no React), just to keep it simple and show the vanilla javascript skills. However, I've decided to use a bit of ES6.
+I've used a "raw" and "old fasioned" way to create this project (no minify, no babel, no React), just to keep it simple and show the vanilla javascript skills. However, I've decided to use a bit of ES6 for easier readability. If you'd rather prefer the classic Javascript, just ask me to do it and I will transpile it manually to it.
 
 In normal circunstances (bigger projects), I use the [BEM](http://getbem.com/naming/) naming convention on CSS classes, but in this case, as it's a small one, I've picked simple names instead.
 
