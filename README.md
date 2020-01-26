@@ -4,17 +4,17 @@
 
 I've used a "raw" and "old fasioned" way to create this project (no minify, no babel, no React), just to keep it simple and show the vanilla javascript skills. However, I've decided to use ES6.
 
-In normal circunstances (bigger projects), I use the [BEM](http://getbem.com/naming/) naming convention on classes, but in this case, as it's a small one, I've picked simple names instead.
+In normal circunstances (bigger projects), I use the [BEM](http://getbem.com/naming/) naming convention on CSS classes, but in this case, as it's a small one, I've picked simple names instead.
 
 The `categories-config` (required by the assessment) is located in the `categories.js` file. I've chosen the named "categories" for more simplicity, but the concept is the same.
 
+I decided to not upload this project in Github, in case you need to mantain the solved assessment hidden from other people who my be doing the test too.
+
+To run it, just install the `serve` package (globally) with node, and then go to the project's root folder and run `serve`
+
 ---
 
-### Sample Video:
-
-https://drive.google.com/file/d/1Jb7Aa_HjPs5eYGF5qDudgFb51I0DrDcs/view?usp=sharing
-
-## Description
+## Requirements (all fullfilled):
 
 The user should be able to
 
@@ -40,9 +40,3 @@ The user should be able to
     - after click on apply/cancel both buttons should disappear again (as there are no changes to the current applied selection anymore)
 - See what elements are currently applied
   - create a list/div outside the category filter where the user can see (comma separated) which elements are currently applied (category-groups and categories)
-
-### Notes
-
-- Provide a categories-config (json or whatever type you prefer) that contains the tree structure of the categories/category-groups
-- If you want to implement different icons for each category/group - please consider this in the categories-config
-- You can implement the search functionality either in js or by using ajax calls to php scripts (if you want to prove your backend skills aswell -> in this case provide the categories-config in php)
