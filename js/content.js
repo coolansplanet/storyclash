@@ -19,19 +19,19 @@ const content = [
   },
   {
     id: "categories-brandsAndOrganizations-community-example1",
-    label: "Example 1"
+    label: "Example 1 (community)"
   },
   {
     id: "categories-brandsAndOrganizations-community-example2",
-    label: "Example 2"
+    label: "Example 2 (community)"
   },
   {
     id: "categories-brandsAndOrganizations-consumerElectronics-example1",
-    label: "Example 1"
+    label: "Example 1 (electronics)"
   },
   {
     id: "categories-brandsAndOrganizations-consumerElectronics-example2",
-    label: "Example 2"
+    label: "Example 2 (electronics)"
   },
   {
     id: "categories-brandsAndOrganizations-fashion-clothing",
@@ -43,8 +43,8 @@ const content = [
   },
   { id: "categories-brandsAndOrganizations-fashion-jewelry", label: "Jewelry" },
   { id: "categories-brandsAndOrganizations-fashion-watches", label: "Watches" },
-  { id: "categories-media-example1", label: "Example 1" },
-  { id: "categories-media-example2", label: "Example 2" },
-  { id: "categories-influencer-example1", label: "Example 1" },
-  { id: "categories-influencer-example2", label: "Example 2" }
+  { id: "categories-media-example1", label: "Example 1 (media)" },
+  { id: "categories-media-example2", label: "Example 2 (media)" },
+  { id: "categories-influencer-example1", label: "Example 1 (influencer)" },
+  { id: "categories-influencer-example2", label: "Example 2 (influencer)" }
 ];

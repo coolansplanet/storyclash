@@ -59,5 +59,15 @@ searchBoxElement.addEventListener("input", e => {
     });
   }
 });
+buttons.querySelector(".cancel").addEventListener("click", () => {
+  const lastSnapshot =
+    categoriesSelectionHistory[categoriesSelectionHistory.length - 1];
+  Object.values(categoriesIndex).forEach(oneCategory => {
+    oneCategory.selected = oneCategory.checkbox.checked =
+      lastSnapshot[oneCategory.id];
+    updateParentCheckboxes(oneCategory);
+  });
+  showBottomButtons();
+});
 
 buttons.querySelector(".apply").addEventListener("click", apply);
